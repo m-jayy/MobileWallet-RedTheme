@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/home_bg"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.b.pocket_wallet.Payments_Donations">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBar"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/internalpages_primary_shade"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@drawable/linear_shadow">
+
+        <TextView
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Confirmation"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="18dp"
+                android:layout_weight="1.4"
+                android:layout_height="wrap_content"
+                android:text="Comapny Name"/>
+
+            <TextView
+                android:id="@+id/ComapnyName"
+                android:layout_width="0dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="FPECS"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="18dp"
+                android:layout_weight="1.4"
+                android:layout_height="wrap_content"
+                android:text="Reference Number"/>
+
+            <TextView
+                android:id="@+id/reffNum"
+                android:layout_width="0dp"
+                android:textSize="18dp"
+                android:layout_marginLeft="40dp"
+                android:textColor="#000"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="f1234"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="18dp"
+                android:layout_weight="1.4"
+                android:layout_height="wrap_content"
+                android:text="Payable Amount"/>
+
+            <TextView
+                android:id="@+id/fee"
+                android:layout_width="0dp"
+                android:textSize="18dp"
+                android:layout_marginLeft="40dp"
+                android:textColor="#000"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="RS. 123300"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="18dp"
+                android:layout_weight="1.4"
+                android:layout_height="wrap_content"
+                android:text="Fee (Exclusive of Tax)"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="18dp"
+                android:layout_marginLeft="40dp"
+                android:textColor="#000"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="RS. 0.00"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="18dp"
+                android:layout_weight="1.4"
+                android:layout_height="wrap_content"
+                android:text="Last Date"/>
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="9/11/2019"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="18dp"
+                android:layout_weight="1.4"
+                android:layout_height="wrap_content"
+                android:text="Total"/>
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="0dp"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="RS. 123300"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <Button
+            android:onClick="Cancel"
+            android:background="@drawable/round_corner_button_red"
+            android:layout_width="100dp"
+            android:layout_marginRight="126dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:layout_gravity="end|bottom"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:onClick="Confirm"
+            android:background="@drawable/round_corner_button_green"
+            android:layout_width="100dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Pay"
+            android:layout_gravity="end|bottom"
+            tools:ignore="OnClick" />
+
+    </FrameLayout>
+
+</LinearLayout>

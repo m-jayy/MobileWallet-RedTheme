@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:weightSum="5"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp" 
+    android:background="#FFF">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:scaleType="fitXY"
+        android:layout_height="36dp"
+
+        app:srcCompat="@drawable/ic_email_black_24dp"/>
+
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_weight="3.3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RS. 50.00"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Title"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_weight="1.2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="30/2/2018"/>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryDark">#ab1704</color>
+    <color name="colorPrimary">#ab1704</color>
+    <color name="colorAccent">#ff343a</color>
+    <color name="black">#000</color>
+    <color name="splashscreen_bg">#8a1f51</color>
+    <color name="splashscreen_title">#8a1f51</color>
+    <color name="textColor">#fff</color>
+    <color name="contentcolor">#ab1704</color>
+    <color name="unFIllStar">#bababa</color>
+    <color name="FIllStar">#E7711B</color>
+    <color name="blue_grey">#607d8b</color>
+    <color name="emphasis">#31b6e7</color>
+
+</resources>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/home_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.b.pocket_wallet.MoviesList">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBar"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/internalpages_primary_shade"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <com.tomer.fadingtextview.FadingTextView
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:id="@+id/appBar_text"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:timeout="3000"
+                />
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/appBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/movie_1"
+        android:background="@drawable/listview_shape"
+        android:orientation="vertical"
+        android:layout_below="@+id/appBar"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+
+            android:src="@drawable/movie_cover_1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:paddingTop="7dp"
+            android:paddingLeft="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/movie_rating_1"
+                android:theme="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:isIndicator="true" />
+
+
+            ></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:orientation="horizontal">
+        <TextView
+
+            android:text="Looper"
+            android:paddingBottom="10dp"
+            android:layout_weight="4.9"
+            android:layout_width="wrap_content"
+
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textStyle="bold"
+            />
+
+            <TextView
+
+                android:text="9/11/2018"
+                android:paddingBottom="8dp"
+                android:textColor="@color/unFIllStar"
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/movie_2"
+                android:background="@drawable/listview_shape"
+                android:orientation="vertical"
+                android:layout_below="@+id/appBar"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/venueImage"
+
+                    android:src="@drawable/movie_cover_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:paddingTop="7dp"
+                    android:paddingLeft="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/movie_rating_2"
+                        android:theme="@style/RatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:isIndicator="true" />
+
+
+                    ></LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:text="Logan"
+                        android:paddingBottom="10dp"
+                        android:layout_weight="4.9"
+                        android:layout_width="wrap_content"
+
+                        android:textSize="16dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+
+                        android:text="9/08/2018"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/unFIllStar"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textSize="16dp"
+                        android:layout_height="wrap_content"
+
+                        />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/movie_3"
+                android:background="@drawable/listview_shape"
+                android:orientation="vertical"
+                android:layout_below="@+id/appBar"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+
+                    android:src="@drawable/movie_cover_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:paddingTop="7dp"
+                    android:paddingLeft="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/movie_rating_3"
+                        android:theme="@style/RatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:isIndicator="true" />
+
+
+                    ></LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/movieName"
+                        android:text="Jack Whitehall's"
+                        android:paddingBottom="10dp"
+                        android:layout_weight="4.9"
+                        android:layout_width="wrap_content"
+
+                        android:textSize="16dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+
+                        android:text="9/02/2018"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/unFIllStar"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textSize="16dp"
+                        android:layout_height="wrap_content"
+
+                        />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

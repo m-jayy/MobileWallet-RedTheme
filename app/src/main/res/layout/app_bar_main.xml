@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/appbar_shade"
+    app:titleTextColor="#FFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/notifications"
+        android:layout_weight="0.5"
+        app:srcCompat="@drawable/ic_statement_white_24dp"/>
+
+        <com.tomer.fadingtextview.FadingTextView
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:id="@+id/appBar_text"
+            android:layout_weight="4"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:timeout="3000"
+            />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+       android:layout_marginRight="10dp"
+        android:id="@+id/signout"
+        android:layout_weight="0.5"
+        android:layout_gravity="top|right"
+        android:src="@drawable/signout"/>
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

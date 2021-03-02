@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.b.pocket_wallet">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MoviesList"
+            android:label="Pocket Wallet" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity_pin" />
+        <activity android:name=".HomeActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".signupActivity" />
+        <activity
+            android:name=".Movie_main_page"
+            android:label="@string/title_activity_movie_main_page"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".EventList" />
+        <activity
+            android:name=".Event_main_page"
+            android:label="@string/title_activity_event_main_page"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Bus_main_page"
+            android:label="@string/title_activity_bus_main_page"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".BusList" />
+        <activity android:name=".DiscountList" />
+        <activity
+            android:name=".Discount_main_page"
+            android:label="@string/title_activity_discount_main_page"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Payments" />
+        <activity android:name=".Payments_Donations" />
+        <activity android:name=".Payments_Donations_Confirmation" />
+        <activity android:name=".Payments_FeeCollection" />
+        <activity android:name=".Payments_FeeCollection_Confirmation" />
+        <activity android:name=".Payments_AmountTransfer" />
+        <activity android:name=".Payments_AmountTransfer_Confirmation" />
+        <activity android:name=".Insurance" />
+        <activity android:name=".Insurance_Company_Page" />
+        <activity android:name=".Insurance_Confirmation_Page" />
+        <activity android:name=".BillPayments" />
+        <activity android:name=".BillPayments_Utilities" />
+        <activity android:name=".BillPayments_Utilities_Electricity" />
+        <activity android:name=".BillPayments_Utilities_Electricity_Confirmation" />
+        <activity android:name=".BillPayments_Utilities_Telephone" />
+        <activity android:name=".BillPayments_Utilities_Telephone_Conformation" />
+        <activity android:name=".BillPayments_Utilities_Internet" />
+        <activity android:name=".Billpayments_Utilities_Internet_Confirmation" />
+        <activity android:name=".BillPayments_Utilities_Gas" />
+        <activity android:name=".BillPayments_Utilities_Gas_Confirmation" />
+        <activity android:name=".BillPayments_Utilities_Water" />
+        <activity android:name=".BillPayments_Utilities_Water_Confirmation" />
+        <activity android:name=".BillPayments_MobileTopups" />
+        <activity android:name=".BillPayments_MobileTopups_Company" />
+        <activity android:name=".MoneyTransfer" />
+        <activity android:name=".MoneyTransfer_banktransaction" />
+        <activity android:name=".MoneyTransfer_banktransaction_Confirmation" />
+        <activity android:name=".miniStatement" />
+        <activity android:name=".MoneyTransfer_IntraBFT"></activity>
+    </application>
+
+</manifest>

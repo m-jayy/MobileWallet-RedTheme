@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.b.pocket_wallet.LoginActivity_pin">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/pin_bg"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_marginTop="40dp"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:textColor="@color/contentcolor"
+        android:text="Mobile Wallet"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!--android:drawableLeft="@drawable/ic_smartphone_24dp"-->
+
+        <EditText
+            android:hint="CNIC"
+            android:id="@+id/Phone_Number"
+            android:maxLength="13"
+            android:background="@drawable/pin_background"
+            android:textAlignment="center"
+            android:paddingTop="15dp"
+
+            android:paddingBottom="15dp"
+
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.spark.submitbutton.SubmitButton
+            android:layout_gravity="center"
+            android:id="@+id/next_btn"
+            android:layout_width="300dp"
+            android:layout_height="69dp"
+            android:text="Next"
+            android:textColor="@color/gray"
+            app:sub_btn_background="@color/white"
+            app:sub_btn_duration="3000"
+            app:sub_btn_line_color="@color/contentcolor"
+            app:sub_btn_ripple_color="@color/colorAccent"
+            app:sub_btn_tick_color="@color/white" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/signup"
+            android:textColor="@color/contentcolor"
+            android:text="New customer? SIGN UP NOW"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

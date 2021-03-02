@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/home_bg"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.b.pocket_wallet.Payments_Donations">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBar"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/internalpages_primary_shade"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@drawable/linear_shadow">
+
+        <TextView
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="User Money Transfer"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CNIC*"/>
+
+        <EditText
+            android:hint="3740567417611"
+            android:id="@+id/cnic"
+            android:maxLength="13"
+            android:inputType="number"
+            android:paddingLeft="4dp"
+            android:background="@drawable/pin_background"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:drawableRight="@drawable/ic_credit_card_black_24dp"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingPrefix" />
+
+
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Phone Number*"/>
+
+        <EditText
+            android:id="@+id/Phone_Number"
+            android:hint="03365400203"
+            android:maxLength="11"
+            android:inputType="number"
+            android:paddingLeft="4dp"
+            android:background="@drawable/pin_background"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:drawableRight="@drawable/ic_smartphone_24dp"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingPrefix" />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Amount*"/>
+
+        <EditText
+            android:hint="1234"
+            android:id="@+id/amount"
+            android:padding="10dp"
+            android:inputType="number"
+            android:paddingLeft="4dp"
+            android:layout_marginTop="10dp"
+            app:forceKeyboard="true"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingPrefix" />
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/transfer"
+            android:background="@drawable/round_corner_button_red"
+            android:layout_width="100dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Transfer"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

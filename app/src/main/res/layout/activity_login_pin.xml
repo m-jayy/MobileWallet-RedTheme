@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.b.pocket_wallet.LoginActivity_pin">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    android:src="@drawable/pin_bg"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+
+            android:id="@+id/title"
+           android:layout_marginLeft="20dp"
+            android:textColor="@color/contentcolor"
+            android:text="Enter 4 Digit OTP No:"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/pinview"
+            android:layout_marginTop="-0dp"
+            app:pinBackground="@drawable/pin_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            app:forceKeyboard="false"
+            app:pinWidth="70dp"
+            app:pinHeight="70dp"
+            app:pinLength="4"
+            app:cursorVisible="false"
+            app:hint="0"
+            app:password="false"/>
+
+        <TextView
+            android:id="@+id/tv_reset_password"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center"
+            android:textColor="@color/contentcolor"
+            android:text="Forgot OTP"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

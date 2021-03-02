@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/nested"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.b.pocket_wallet.Discount_main_page"
+    tools:showIn="@layout/activity_discount_main_page">
+
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CNIC Of Ticket Picker"/>
+
+        <EditText
+            android:hint="CNIC"
+            android:id="@+id/CINC"
+            android:paddingLeft="2dp"
+            android:maxLength="13"
+            android:background="@drawable/pin_background"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            app:forceKeyboard="false"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:paddingBottom="10dp"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingPrefix" />
+
+        <!--<TextView-->
+
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Delivery Address"/>-->
+
+        <!--<EditText-->
+            <!--android:hint="CNIC"-->
+            <!--android:paddingLeft="2dp"-->
+            <!--android:maxLength="13"-->
+            <!--android:background="@drawable/pin_background"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="20dp"-->
+            <!--android:inputType="textMultiLine"-->
+            <!--android:lines="3"-->
+            <!--android:minLines="3"-->
+            <!--android:maxLines="10"-->
+            <!--android:gravity="top|left"-->
+            <!--android:scrollbars="vertical"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--tools:ignore="MissingPrefix" />-->
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City"/>
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:id="@+id/spinnercity"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Color"/>
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:id="@+id/p_color"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Size"/>
+
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:id="@+id/p_size"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Avalible Piece"/>
+
+        <TextView
+            style="@style/sectionHeader"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="81 "
+            android:textSize="20dp"
+            />
+
+
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity"/>
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:id="@+id/spinneQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="110dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            />
+
+
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

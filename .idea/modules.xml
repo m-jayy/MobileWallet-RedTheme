@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MobileWallet_v1.1_RedTheme.iml" filepath="$PROJECT_DIR$/.idea/modules/MobileWallet_v1.1_RedTheme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MobileWallet_v1.1_RedTheme.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MobileWallet_v1.1_RedTheme.app.iml" />
+    </modules>
+  </component>
+</project>
